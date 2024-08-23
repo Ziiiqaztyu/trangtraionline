@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang trại online Home Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div id="inputSection">
+        <h1>Nhập thông tin</h1>
+        <form class="nhap" id="submitForm">
+            <label for="name">Họ tên</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="weight">Số kg:</label>
+            <input type="number" id="weight" name="weight" required step="0.1">
+            <br><br>
+            <input type="submit" value="Lưu">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="timkiem" id="searchSection">
+            <h2>Tìm kiếm thông tin</h2>
+            <form id="searchForm">
+                <label for="search_name">Nhập họ tên hoặc ID khách hàng để tìm:</label>
+                <input type="text" id="search_name" name="search_name">
+                <input type="submit" value="Tìm">
+            </form>
+        </div>
+
+        <div class="ketqua" id="resultSection">
+            <h2>Kết quả tìm kiếm</h2>
+            <div class="result-box" id="searchResult">
+            </div>
+        </div>
+    </div>
+
+    <div id="submitResult">
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

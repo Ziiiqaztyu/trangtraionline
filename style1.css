@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Y4HL.gif') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#inputSection, #searchSection, #resultSection {
+    background-color: transparent; 
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.325);
+    backdrop-filter: blur(8px);
+    color: white; 
+    padding: 20px;
+    margin: 10px; 
+    border-radius: 10px; 
+    font-size: 1.2rem; 
+}
+
+#inputSection {
+    width: 100%;
+    max-width: 600px; 
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    max-width: 1200px; 
+    justify-content: space-between; 
+}
+
+#searchSection, #resultSection {
+    flex: 1;
+}
+
+.result-box {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    background-color: #fafafa6a;
+    border-radius: 4px; 
+    min-height: 100px;
+    font-size: 1.2rem; 
+    color: white; 
+}
+
+.timkiem input {
+    margin-top: 10px;
+    font-size: 1rem; 
+    color: white; 
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #000; 
+    border-radius: 4px;
+    background: transparent;
+    color: white; 
+    font-size: 1rem; 
+}
+
+input[type="submit"] {
+    background: #3f7541a3;
+    color: rgb(255, 255, 255); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem; 
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
